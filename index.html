@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizerHd</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Banner.jpg" class="banner" alt="Bem-vindo ao QuizerHd">
+        <p class="header-text">Bem-vindo ao QuizerHd - Seu Portal de Filmes</p>
+    </header>
+
+    <main>
+        <h2>Filmes em Destaque 🌟</h2>
+        <div class="movies-list">
+            <div class="movie-item">
+                <a href="filme1.html">
+                    <img src="gods_of_egypst.jpg" alt="Gods of Egypt" class="movie-poster">
+                    <p class="movie-title">Gods of Egypt 🏺🦅</p>
+                </a>
+            </div>
+            <div class="movie-item">
+                <a href="filme2.html">
+                    <img src="GodzillaMinusOnePoster.jpg" alt="Godzilla Minus One" class="movie-poster">
+                    <p class="movie-title">Godzilla Minus One 🦖🌊</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 QuizerHd. Todos os direitos reservados. 🍿📽️</p>
+    </footer>
+
+    <script>
+        // Código para tentar ocultar elementos de anúncio dentro de iframes
+        document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.onload = function() {
+                try {
+                    const adElements = iframe.contentWindow.document.querySelectorAll('.ad, .popup, .banner');
+                    adElements.forEach(ad => ad.style.display = 'none');
+                } catch (error) {
+                    console.log("Não foi possível acessar o conteúdo do iframe devido a restrições de CORS.");
+                }
+            };
+        });
+    </script>
+    
+</body>
+</html>

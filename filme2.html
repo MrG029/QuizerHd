@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla Minus One 🦖🌊</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="movie-page godzilla-minus-one">
+
+    <header>
+        <img src="Banner.jpg" class="banner" alt="Bem-vindo ao QuizerHd">
+        <p class="header-text">Godzilla Minus One - Detalhes do Filme</p>
+    </header>
+
+    <nav class="back-button-container">
+        <a href="index.html"><img src="voltar.jpg" alt="Voltar" class="back-button"></a>
+    </nav>
+
+    <main>
+        <h2>Descrição do Filme</h2>
+        <div class="movie-details">
+            <img src="GodzillaMinusOnePoster.jpg" alt="Godzilla Minus One" class="movie-thumbnail">
+            <p><strong>Gênero:</strong> Ação, Drama, Sci-Fi 🦖🌋</p>
+            <p><strong>Tags:</strong> Monstros, Japão, Catástrofe 🗾💥</p>
+            <p><strong>Sinopse:</strong> O Japão devastado pela guerra enfrenta uma nova ameaça: Godzilla, que traz destruição ainda maior e desafia a sobrevivência do país.</p>
+
+            <!-- Embed do Trailer do YouTube -->
+            <h3>Trailer</h3>
+            <div class="trailer-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/JfDkRvWeDfY?si=3-8pc8ZiLZdqEKR1" 
+                    title="Trailer de Godzilla Minus One" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Botão para assistir o filme -->
+            <button class="watch-button" onclick="document.getElementById('movie-player').scrollIntoView({behavior: 'smooth'});">Assistir 🎥</button>
+            
+            <!-- Container for the movie player -->
+            <div class="movie-player-container" id="movie-player">
+                <video width="80%" height="auto" controls class="movie-video" poster="Thumbminusone.jpg">
+                    <source src="" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 QuizerHd. Todos os direitos reservados. 🍿📽️</p>
+    </footer>
+</body>
+</html>
